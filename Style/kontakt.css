@@ -1,0 +1,134 @@
+@import url("./boje.css");
+
+body {
+  background-color: var(--zuta);
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.header {
+  background-image: url("../Slike/vino3.jpeg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--zelena);
+  width: 100%;
+  top: 0;
+  position: sticky;
+  height: 10vw;
+}
+
+.header a {
+  text-decoration: none;
+  color: var(--bela);
+}
+
+.header a:hover {
+  color: var(--zuta);
+}
+
+#logoSlova {
+  height: 10vw;
+  width: 10vw;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.uvod {
+  width: 75%;
+  font-weight: bold;
+  font-size: 1.2vw;
+  text-align: center;
+}
+
+.informacije-container {
+  background-color: var(--zelena);
+  width: 71%;
+  color: var(--bela);
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 2rem;
+  height: 40vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.polje {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fas {
+  margin-bottom: 2.5rem;
+}
+
+.mapa {
+  margin-top: 3rem;
+}
+
+.mapa p {
+  font-weight: bold;
+}
+
+iframe {
+  border-width: 1rem;
+  border-color: var(--zelena);
+  border-style: solid;
+}
+
+@media screen and (max-width: 900px) {
+  .uvod {
+    font-size: 2.5vw;
+  }
+
+  .mapa p {
+    font-size: 2.5vw;
+  }
+
+  .informacije-container {
+    width: 75vw;
+  }
+
+  iframe {
+    width: 75vw;
+    height: 60vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .uvod {
+    font-size: 4.5vw;
+  }
+
+  .mapa p {
+    font-size: 4vw;
+  }
+
+  .informacije-container {
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .fas {
+    margin-bottom: 1rem;
+  }
+}

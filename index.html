@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinarija Joksimović</title>
+    <!-- favicon -->
+    <link rel="icon" href="./Slike/logo.png" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@200&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./Style/pocetna.css" />
+    <link rel="stylesheet" href="./Style/header.css" />
+    <link rel="stylesheet" href="./Style/footer.css" />
+    <link rel="stylesheet" href="./Style/burger-meni.css" />
+    <!-- ikonice za fb i inst -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav class="header">
+      <a href="./index.html">
+        <h2 id="pocetna">Početna</h2>
+      </a>
+      <a href="./HTML/ponuda-vina.html">
+        <h2 id="ponuda">Ponuda</h2>
+      </a>
+      <img src="./Slike/logo.png" alt="Logo" id="logoHeader" />
+      <a href="./HTML/posetite-nas.html">
+        <h2 id="posetite-nas">Posetite nas</h2>
+      </a>
+      <a href="./HTML/kontakt.html">
+        <h2 id="kontakt">Kontakt</h2>
+      </a>
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <main>
+      <div class="slike">
+        <img src="./Slike/pocetnaSlika1.jpg" alt="Slika1" id="slika1" />
+        <img src="./Slike/pocetnaSlika2.webp" alt="Slika2" id="slika2" />
+      </div>
+
+      <div class="o-nama">
+        <h1 id="naslov-oNama">O nama...</h1>
+        <br />
+        <p>
+          Vinarija Joksimović, smeštena u blizini Beograda, predstavlja istinsku
+          oazu za ljubitelje vrhunskih vina. Ova vinarija se ponosi dugom
+          tradicijom u proizvodnji vrhunskih vinskih sorti, stvarajući
+          nezaboravna iskustva za sve poklonike dobrog ukusa. <br /><br />
+          Vinograd Vinarije Joksimović prostire se na pitoresknim obroncima oko
+          Beograda, gde blaga klima i plodna zemlja stvaraju idealne uslove za
+          uzgoj grožđa najvišeg kvaliteta. Stručnost i posvećenost vinara
+          odražavaju se u svakoj kapljici vina, pružajući jedinstveni ukusni
+          doživljaj.<br /><br />
+          Posetitelji imaju priliku da dožive čaroliju vinogradarskog područja,
+          uživajući u vođenim degustacijama i slikovitim pogledima na vinograde.
+          Vinarija Joksimović nije samo destinacija za ljubitelje vina, već i
+          mesto gde se tradicija i savremeni pristup sastaju, stvarajući vinsko
+          iskustvo k oje će se dugo pamtiti.
+        </p>
+      </div>
+
+      <div class="slike2">
+        <img src="./Slike/pocetnaSlika3.jpeg" alt="Slika3" id="slika3" />
+        <img src="./Slike/pocetnaSlika4.jpg" alt="Slika4" id="slika4" />
+        <img src="./Slike/vino3.jpeg" alt="Slika5" id="slika5" />
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <img src="./Slike/logo.png" alt="Logo" id="logo" />
+        <p id="naziv">Vinarija Joksimovic</p>
+        <p id="adresa">Adresa:<br />Kralja Petra I 19</p>
+        <p id="telefon">Telefon:<br />069/13145234</p>
+        <p id="email">Email:<br />vinarijazj@gmail.com</p>
+        <p id="pratiteNas">Pratite nas</p>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </footer>
+    <script src="./Script/trenutna-strana.js"></script>
+    <script src="./Script/burger.js"></script>
+  </body>
+</html>

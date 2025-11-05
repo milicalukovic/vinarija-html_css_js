@@ -1,0 +1,108 @@
+@import url("../../boje.css");
+
+* {
+  padding: 0;
+}
+
+.header a:hover {
+  color: var(--zuta);
+}
+.posetite-nas {
+  padding-top: 5%;
+  background-color: var(--zuta);
+  padding-bottom: 5rem;
+  padding-left: 2.8rem;
+  padding-right: 2.8rem;
+}
+
+.naziv-paketa {
+  cursor: pointer;
+}
+
+.slika {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.rezervacija-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.rezervacija {
+  background-color: var(--zelena);
+  border: 3px solid var(--bela);
+  border-radius: 20px;
+  padding: 2rem;
+  width: 30%;
+  color: var(--bela);
+}
+
+.rezervacija div {
+  margin-bottom: 0.7rem;
+}
+
+.polje input {
+  width: 100%;
+}
+
+/* .polje input:focus {
+  background-color: var(--svetlo-plava);
+} */
+
+.polje-obavezno label:not(.greska):after {
+  content: "*";
+  color: var(--crvena);
+}
+
+.forma-red {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forma-red input {
+  width: 80%;
+}
+
+.polje textarea {
+  resize: none;
+}
+
+.dugme:hover {
+  cursor: pointer;
+  transform: scale(1.5, 1.5);
+}
+
+.greska {
+  color: red;
+}
+
+@media screen and (max-width: 900px) {
+  .rezervacija {
+    width: 50%;
+  }
+
+  .forma-red {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .polje textarea {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .rezervacija {
+    width: 90%;
+  }
+
+  .slika {
+    width: 100%;
+    margin-left: 0;
+  }
+}

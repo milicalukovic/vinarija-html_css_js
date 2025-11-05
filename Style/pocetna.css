@@ -1,0 +1,69 @@
+@import url("../boje.css");
+
+.header a:hover {
+  color: var(--zuta);
+}
+
+main {
+  background-color: var(--zuta);
+  display: flex;
+  flex-direction: column;
+}
+
+.slike {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+#slika1 {
+  height: 40%;
+  width: 30%;
+}
+#slika2 {
+  height: 40%;
+  width: 60%;
+}
+
+.o-nama {
+  height: 70%;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.o-nama p {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.o-nama h1 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.slike2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#slika3 {
+  width: 40vw;
+  height: 40%;
+  align-self: flex-start;
+}
+#slika4 {
+  width: 40vw;
+  height: 40%;
+  align-items: flex-end;
+}
+
+#slika5 {
+  width: 100vw;
+  margin-top: 2%;
+}
+
+@media screen and (max-width: 455px) {
+  #slika3,
+  #slika4 {
+    width: 48vw;
+  }
+}
